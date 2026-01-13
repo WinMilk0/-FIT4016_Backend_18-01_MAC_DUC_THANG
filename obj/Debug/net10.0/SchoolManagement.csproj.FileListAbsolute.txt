@@ -1,0 +1,9 @@
+C:\Users\OS\Desktop\file bt\ki 2-2\lap trinh backend\FIT4016-KiemTra-2026\obj\Debug\net10.0\SchoolManagement.csproj.AssemblyReference.cache
+C:\Users\OS\Desktop\file bt\ki 2-2\lap trinh backend\FIT4016-KiemTra-2026\obj\Debug\net10.0\rpswa.dswa.cache.json
+C:\Users\OS\Desktop\file bt\ki 2-2\lap trinh backend\FIT4016-KiemTra-2026\obj\Debug\net10.0\SchoolManagement.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\OS\Desktop\file bt\ki 2-2\lap trinh backend\FIT4016-KiemTra-2026\obj\Debug\net10.0\SchoolManagement.AssemblyInfoInputs.cache
+C:\Users\OS\Desktop\file bt\ki 2-2\lap trinh backend\FIT4016-KiemTra-2026\obj\Debug\net10.0\SchoolManagement.AssemblyInfo.cs
+C:\Users\OS\Desktop\file bt\ki 2-2\lap trinh backend\FIT4016-KiemTra-2026\obj\Debug\net10.0\SchoolManagement.csproj.CoreCompileInputs.cache
+C:\Users\OS\Desktop\file bt\ki 2-2\lap trinh backend\FIT4016-KiemTra-2026\obj\Debug\net10.0\SchoolManagement.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\OS\Desktop\file bt\ki 2-2\lap trinh backend\FIT4016-KiemTra-2026\obj\Debug\net10.0\SchoolManagement.RazorAssemblyInfo.cache
+C:\Users\OS\Desktop\file bt\ki 2-2\lap trinh backend\FIT4016-KiemTra-2026\obj\Debug\net10.0\SchoolManagement.RazorAssemblyInfo.cs
