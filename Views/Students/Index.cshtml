@@ -1,0 +1,63 @@
+@model IEnumerable<SchoolManagement.Models.Student>
+@{
+    ViewData["Title"] = "Students";
+}
+
+<h1>Students</h1>
+
+@if (TempData["SuccessMessage"] != null) {
+    <div class="alert alert-success">@TempData["SuccessMessage"]</div>
+}
+@if (TempData["ErrorMessage"] != null) {
+    <div class="alert alert-danger">@TempData["ErrorMessage"]</div>
+}
+
+<p>
+    <a class="btn btn-primary" asp-action="Create">Create New Student</a>
+</p>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Full name</th>
+            <th>Student ID</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>School</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>@item.FullName</td>
+            <td>@item.StudentId</td>
+            <td>@item.Email</td>
+            <td>@item.Phone</td>
+            <td>@item.School?.Name</td>
+            <td>
+                <a class="btn btn-sm btn-info" asp-action="Edit" asp-route-id="@item.Id">Edit</a>
+                <a class="btn btn-sm btn-danger" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+
+<nav>
+    <ul class="pagination">
+        @{ var current = ViewBag.CurrentPage as int? ?? 1; var total = ViewBag.TotalPages as int? ?? 1; }
+        <li class="page-item @(current <= 1 ? "disabled" : "")">
+            <a class="page-link" asp-action="Index" asp-route-page="@(current-1)">Previous</a>
+        </li>
+        @for (int i = 1; i <= total; i++)
+        {
+            <li class="page-item @(i == current ? "active" : "")">
+                <a class="page-link" asp-action="Index" asp-route-page="@i">@i</a>
+            </li>
+        }
+        <li class="page-item @(current >= total ? "disabled" : "")">
+            <a class="page-link" asp-action="Index" asp-route-page="@(current+1)">Next</a>
+        </li>
+    </ul>
+</nav>
